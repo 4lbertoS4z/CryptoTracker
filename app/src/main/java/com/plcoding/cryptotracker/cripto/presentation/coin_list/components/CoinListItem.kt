@@ -20,8 +20,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.tooling.preview.PreviewDynamicColors
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -29,7 +27,7 @@ import com.plcoding.cryptotracker.cripto.domain.Coin
 import com.plcoding.cryptotracker.cripto.presentation.models.CoinUI
 import com.plcoding.cryptotracker.cripto.presentation.models.DisplayableNumber
 import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme
-import com.plcoding.cryptotracker.util.getDrawableIdForCoin
+import com.plcoding.cryptotracker.core.presentation.util.getDrawableIdForCoin
 import java.text.NumberFormat
 import java.util.Locale
 
