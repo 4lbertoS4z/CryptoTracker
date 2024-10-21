@@ -24,7 +24,7 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.plcoding.cryptotracker.cripto.domain.Coin
-import com.plcoding.cryptotracker.cripto.presentation.models.CoinUI
+import com.plcoding.cryptotracker.cripto.presentation.models.CoinUi
 import com.plcoding.cryptotracker.cripto.presentation.models.DisplayableNumber
 import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme
 import com.plcoding.cryptotracker.core.presentation.util.getDrawableIdForCoin
@@ -32,7 +32,7 @@ import java.text.NumberFormat
 import java.util.Locale
 
 @Composable
-fun CoinListItem(coinUI: CoinUI, onClick: () -> Unit, modifier: Modifier = Modifier) {
+fun CoinListItem(coinUI: CoinUi, onClick: () -> Unit, modifier: Modifier = Modifier) {
 val contentColor = if(isSystemInDarkTheme()){
     Color.White
 }else{
@@ -100,8 +100,8 @@ internal val previewCoin = Coin(
 
 ).toCoinUI()
 
-fun Coin.toCoinUI():CoinUI{
-    return CoinUI(
+fun Coin.toCoinUI():CoinUi{
+    return CoinUi(
         id = id,
         rank = rank,
         name = name,
